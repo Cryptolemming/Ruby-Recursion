@@ -1,3 +1,4 @@
+# first - iterative solution
 def fibs(n)
 	array = [0, 1]
 	count = 2
@@ -8,6 +9,7 @@ def fibs(n)
 	return array[n-1]
 end
 
+# next - recursive solution
 def fibs_rec(n, a=0, b=1, value=a)
     return value if n == 0
     fibs_rec(n-1, b, a+b, a)
